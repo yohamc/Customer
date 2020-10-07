@@ -7,6 +7,7 @@ sap.ui.define([
 	return Controller.extend("LogaliUI5/Customer.controller.App", {
 
 		onShowHello: function () {
+			//read text from i18n / model
 			var sHello = this.getView().getModel("i18n").getResourceBundle().getText("sayHello");
 			var sName = this.getView().getModel().getProperty("/recipient/name");
 			var sMsg = sHello.concat(" ").concat(sName);
